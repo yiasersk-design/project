@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Meta AI Note Maker</title>
+    
+    <!-- Fallback Redirect (Relative Path আপডেট করা হয়েছে) -->
+    <meta http-equiv="refresh" content="0; url=./Modules/Home.html" />
+    
+    <!-- Instant JavaScript Redirect (Relative Path আপডেট করা হয়েছে) -->
+    <script>
+        // replace() ব্যবহার করা হয়েছে যাতে ব্রাউজার হিস্ট্রিতে এই পেজটি সেভ না থাকে 
+        // এবং ইউজার ব্যাক বাটন চাপলে ব্ল্যাঙ্ক পেজে আটকে না যায়।
+        window.location.replace("./Modules/Home.html");
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #6b7280;
+        }
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid #e5e7eb;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- রিডাইরেক্ট হতে কয়েক মিলি-সেকেন্ড সময় লাগলে এই লোডারটি শো করবে -->
+    <div class="loader">
+        <div class="spinner"></div>
+        <div style="font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">Loading App...</div>
+    </div>
+
+</body>
+</html>
